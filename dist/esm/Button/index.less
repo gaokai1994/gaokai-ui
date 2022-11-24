@@ -1,0 +1,44 @@
+@color: #1677ff;
+.gk-btn {
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  white-space: no-wrap;
+  border: 1px solid transparent;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 rgb(5 145 255 / 10%);
+  cursor: pointer;
+}
+
+.gk-btn:focus {
+  border-color: transparent;
+}
+// default
+
+.gk-btn-default {
+  color: rgba(0, 0, 0, 0.88);
+  background: #ffffff;
+}
+.gk-btn-default:hover {
+  color: @color;
+  border-color: @color;
+}
+.gk-btn-default:focus {
+  color: @color;
+  border-color: @color;
+}
+
+// primary
+.gk-btn-primary {
+  color: white;
+  background: @color;
+  border-color: transparent;
+}
+.gk-btn-primary:hover {
+  background: #4096ff;
+}
+.gk-btn-primary:focus {
+  background: #4096ff;
+}
+// d9d9d9
