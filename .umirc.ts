@@ -24,7 +24,7 @@ export default defineConfig({
       path: 'http://blog.gaokai.fun',
     },
   ],
-  base: '/gaokai-ui',
-  publicPath: '/gaokai-ui/'
+  // base: '/gaokai-ui',
+  // publicPath: '/gaokai-ui/'
   // more config: https://d.umijs.org/config
 });
