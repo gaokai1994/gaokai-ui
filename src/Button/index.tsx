@@ -27,11 +27,13 @@ interface ButtonProps {
    * @default false
    */
   disable?: boolean;
+
+  className?: string;
 }
 
 const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   console.log('props', props);
-  const { type = 'default', size = 'middle', block, disable, ...reset } = props;
+  const { type = 'default', size = 'middle', block, disable,className, ...reset } = props;
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     let { onClick } = props;
@@ -47,7 +49,9 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     [`${prefix}-${type}`]: type,
     [`${prefix}-block`]: block,
     [`${prefix}-disabled`]: disable,
-  });
+  },
+  className
+  );
   return (
     <button className={classes} {...reset} onClick={handleClick}>
       {props?.children}
